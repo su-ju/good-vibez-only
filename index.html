@@ -17,33 +17,65 @@
     <title>Wednesdaymedia</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="node_modules/98.css/dist/98.css" />
+    <link rel="stylesheet" href="node_modules/98.css/dist/vs.css" />
   </head>
 
   <body>
     <main>
-      <div class="folder">
+      <div class="my-folder" id="24-hours-button">
         <img src="folder-32x32.png" />
         <label>24 Hours</label>
       </div>
-      <div class="folder">
+      <div class="my-folder">
         <img src="folder-32x32.png" />
         <label>Schlüppi Guy</label>
       </div>
 
-      <div class="taskbar">
-        <button><img src="start.png" />Start</button>
+      <div class="my-taskbar">
+        <button id="my-start-button" class="my-button">
+          <img src="start.png" />Start
+        </button>
       </div>
     </main>
-    <script type="text/javascript" type="module" src="script.js"></script>
   </body>
-  <div id="modal">
-    <div class="window">
+  <div class="my-modal my-hidden" id="my-game-container">
+    <div id="my-game">
+      <div class="window">
+        <div class="title-bar" id="my-game-header">
+          <div class="title-bar-text">24시간이 모자라</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" id="my-game-button"></button>
+          </div>
+        </div>
+        <div class="window-body" id="my-game-body">
+          <div class="gm4html5_div_class" id="gm4html5_div_id">
+            <canvas id="canvas" width="778" height="600">
+              <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="my-modal my-hidden" id="my-welcome">
+    <div class="window my-window">
       <div class="title-bar">
         <div class="title-bar-text">Welcome to Wednesdaymedia</div>
+        <div class="title-bar-controls">
+          <button aria-label="Close" id="my-close-button"></button>
+        </div>
       </div>
       <div class="window-body">
         <p>Am 5. November gehts los!</p>
       </div>
     </div>
   </div>
+  <script
+    type="text/javascript"
+    src="html5game/シュルッピ.js?WIBBC=471674726"
+  ></script>
+  <!-- <script>
+    window.onload = GameMaker_Init;
+  </script> -->
+  <script type="text/javascript" type="module" src="script.js"></script>
 </html>

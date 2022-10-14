@@ -9,7 +9,7 @@ main {
   width: 100vw;
 }
 
-#modal {
+.my-modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,16 +20,21 @@ main {
 
   width: 100vw;
   height: 100vh;
+}
 
-  pointer-events: none;
+.my-visible {
+  visibility: visible;
+}
+
+.my-hidden {
   visibility: hidden;
 }
 
-.window {
+.my-window {
   width: 250px;
 }
 
-.taskbar {
+.my-taskbar {
   outline: 1px solid #c0c0c0;
   border-top: 1px solid white;
   background: #c0c0c0;
@@ -43,14 +48,14 @@ main {
   flex: 1;
 }
 
-button {
+.my-button {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 3px;
 }
 
-.folder {
+.my-folder {
   padding: 12px;
 
   display: flex;
@@ -62,28 +67,74 @@ button {
   color: white;
 }
 
-.folder label {
+.my-folder label {
   margin-top: 12px;
 }
 
-.folder:active img {
+.my-folder:active img {
   background-color: #000080;
 }
 
-.folder:active label {
+.my-folder:active label {
   background-color: #000080;
 }
 
-.selection-effect {
-  display: block;
+#my-game {
+  width: 800px;
+  position: fixed;
+}
+
+#my-game-body {
+  height: 600px;
+}
+
+#gm4html5_div_id {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  image-rendering: optimizeSpeed;
+  -webkit-interpolation-mode: nearest-neighbor;
+  -ms-touch-action: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+:-webkit-full-screen #canvas {
+  width: 100%;
+  height: 100%;
+}
+div.gm4html5_div_class {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+/* START - Login Dialog Box */
+div.gm4html5_login {
+  padding: 20px;
   position: absolute;
-  left: 0;
-  top: 0;
-  filter: drop-shadow(32px 0 0 #000080);
-  transform: translateX(-32px);
-  clip-path: polygon(100% 0, 200% 0, 200% 100%, 100% 100%);
-  opacity: 0.5;
-
-  width: 32px;
-  height: 32px;
+  border: solid 2px #000000;
+  background-color: #404040;
+  color: #00ff00;
+  border-radius: 15px;
+  box-shadow: #101010 20px 20px 40px;
+}
+div.gm4html5_cancel_button {
+  float: right;
+}
+div.gm4html5_login_button {
+  float: left;
+}
+div.gm4html5_login_header {
+  text-align: center;
+}
+/* END - Login Dialog Box */
+:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
 }
