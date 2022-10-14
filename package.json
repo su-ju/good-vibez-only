@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "serve"
+  },
+  "dependencies": {
+    "98.css": "^0.1.18",
+    "prettier": "^2.7.1"
+  }
+}
