@@ -1,2 +1,7 @@
 .DS_Store
-node_modules
+node_modules/*
+!node_modules/98.css
+node_modules/98.css/*
+!node_modules/98.css/dist
+node_modules/98.css/dist/*
+!node_modules/98.css/dist/98.css
