@@ -1,1 +1,5 @@
-# good-vibez-only
+# README
+
+```sh
+npx serve
+```
